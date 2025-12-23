@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiApp1.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:inputs="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs">
+
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+        <Label Margin="0,10,0,0" Text="ComboBox with items that works" />
+        <inputs:SfComboBox x:Name="ComboBox" IsEditable="False" />
+
+        <Label Margin="0,10,0,0" Text="ComboBox with items previously loaded and then added in a async operation" />
+        <inputs:SfComboBox x:Name="ComboBox2" IsEditable="False" />
+
+        <Label Margin="0,10,0,0" Text="ComboBox with items loaded in a async operation" />
+        <inputs:SfComboBox x:Name="ComboBox3" IsEditable="False" />
+
+        <Label Margin="0,10,0,0" Text="Assigning the items to an empty ItemsSource, works fine even if they are coming from an async operation" />
+        <inputs:SfComboBox x:Name="ComboBox4" IsEditable="False" />
+    </StackLayout>
+
+</ContentPage>
